@@ -54,7 +54,7 @@ double add(double a, double b) {
 // 가영 - 뺄셈 함수
 // =============================================
 double subtract(double a, double b) {;
-    return add(a, -b); // 덧셈 함수를 활용하여 뺄셈을 구현
+    return a - b; 
 }
 
 // =============================================
