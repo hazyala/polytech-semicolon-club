@@ -26,11 +26,11 @@ int main() {
     } else if (op == '-') { 
         printf("%.2lf - %.2lf = %.2lf\n", a, b, subtract(a, b));   //뺄셈식 출력
 
-    } else if (/* 형준 - 곱셈을 위한 조건을 채우세요 */) {
-        // 곱셈 결과를 출력하는 식을 구성해주세요
+    } else if (op == '*') {
+        printf("%.2lf * %.2lf = %.2lf\n", a, b, multiply(a, b));   //곱셈식 출력
 
-     } else if (op == '/') {      // 입력한 연산자가 `/` 인지 확인
-       printf("결과: %.2f\n", divide(a, b));   // divide(a, b) 먼저 실행
+     } else if (op == '/' && b != 0)       { // 나눗셈을 위한 조건을 채우세요
+       printf("결과: %.2lf\n", divide(a, b));   // divide(a, b) 먼저 실행
      }
      else if (/* 석현 - 나머지를 위한 조건을 채우세요 */) {
         // 나머지 결과를 출력하는 식을 구성해주세요
@@ -52,15 +52,15 @@ double add(double a, double b) {
 // =============================================
 // 가영 - 뺄셈 함수
 // =============================================
-double subtract(double a, double b) {;
-    return a - b; 
+double subtract(double a, double b) {
+    return add(a , -b); 
 }
 
 // =============================================
 // 형준 - 곱셈 함수
 // =============================================
 double multiply(double a, double b) {
-    // TODO: a와 b를 곱한 값을 반환하세요
+    return a * b;
 }
 
 // =============================================
@@ -69,8 +69,8 @@ double multiply(double a, double b) {
 double divide(double a, double b) {
     
     if (b != 0)  // b가 0이 아닐 때만 나눗셈 실행
-    {
-        double result = (double)a / b;
+    {   
+        double result = a / b;
         return result; // 나눗셈 결과 반환
     }
     else
