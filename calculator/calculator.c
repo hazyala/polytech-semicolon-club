@@ -24,8 +24,7 @@ int main() {
         // 덧셈 결과를 출력하는 식을 구성해주세요
 
     } else if (op == '-') { 
-        double result = subtract(a, b); //함수 호출
-        printf("%.2lf - %.2lf = %.2lf\n", a, b, result);   //뺄셈식 출력
+        printf("%.2lf - %.2lf = %.2lf\n", a, b, subtract(a, b));   //뺄셈식 출력
         // 뺄셈 결과를 출력하는 식을 구성해주세요
 
     } else if (/* 형준 - 곱셈을 위한 조건을 채우세요 */) {
@@ -54,9 +53,8 @@ double add(double a, double b) {
 // =============================================
 // 가영 - 뺄셈 함수
 // =============================================
-double subtract(double a, double b) {
-    double sub = a - b;
-    return sub;
+double subtract(double a, double b) {;
+    return add(a, -b); // 덧셈 함수를 활용하여 뺄셈을 구현
 }
 
 // =============================================
