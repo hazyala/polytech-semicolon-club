@@ -28,9 +28,7 @@ int main() {
         printf("%.2lf - %.2lf = %.2lf\n", a, b, result);   //뺄셈식 출력
         // 뺄셈 결과를 출력하는 식을 구성해주세요
 
-    } else if (op == '*') { 
-        double result = multiply(a, b); //함수 호출
-        printf("%.2lf * %.2lf = %.2lf\n", a, b, result);   //곱셈식 출력
+    } else if (/* 형준 - 곱셈을 위한 조건을 채우세요 */) {
         // 곱셈 결과를 출력하는 식을 구성해주세요
 
     } else if (/* 수용 - 나눗셈을 위한 조건을 채우세요 */) {
