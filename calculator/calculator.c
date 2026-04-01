@@ -33,7 +33,8 @@ int main() {
      } else if (op == '/' && b != 0)       { // 나눗셈을 위한 조건을 채우세요
        printf("결과: %.2lf\n", divide(a, b));   // divide(a, b) 먼저 실행
      }
-     else if (/* 석현 - 나머지를 위한 조건을 채우세요 */) {
+     else if (op == '%') {
+        printf("결과: %.2lf %% %.2lf = %.2lf\n", a, b, modulo(a, b));
         // 나머지 결과를 출력하는 식을 구성해주세요
 
     } else {
@@ -86,13 +87,5 @@ double divide(double a, double b) {
 // 석현 - 나머지 함수
 // =============================================
 int modulo(int a, int b) {
-    // TODO: if문을 사용해서 b가 0일 때와 아닐 때를 나눠서 처리하세요
-    //       b가 0이면 → 오류 메시지 출력 후 0 반환
-    //       b가 0이 아니면 → a를 b로 나눈 나머지 반환
-
-    if (/* 조건을 채우세요 */) {
-
-    } else {
-
-    }
+    double result = a % b;
 }
